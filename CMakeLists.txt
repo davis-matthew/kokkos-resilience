@@ -143,7 +143,7 @@ endif()
 
 # Set up find_package config and version file
 # Allow same major version compatibility
-# Possibly in the future find_package(Kokkos REQUIRED COMPONENTS reslience)
+# Possibly in the future find_package(Kokkos REQUIRED COMPONENTS resilience)
 include(CMakePackageConfigHelpers)
 configure_package_config_file(cmake/resilienceConfig.cmake.in
                               ${CMAKE_CURRENT_BINARY_DIR}/resilienceConfig.cmake

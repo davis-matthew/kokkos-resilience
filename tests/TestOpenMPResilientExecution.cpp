@@ -155,7 +155,7 @@ TEST(TestResOpenMP, TestResilientForInteger)
 }
 
 // gTest attempts to trigger all 3 executions generating different data.
-// Requires non-multipe of 3 OMP threads to generate error.
+// Requires non-multiple of 3 OMP threads to generate error.
 // Should repeat user-specified number of times (in context file) and then abort.
 TEST(TestResOpenMP, TestResilientForInsertError)
 {

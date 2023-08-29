@@ -175,7 +175,7 @@ struct ResilientDuplicatesSubscriber {
   static bool in_resilient_parallel_loop;
 
   // Creating map for duplicates: used for duplicate resolution per-kernel
-  // Creating cache map of duplicates: used for tracking duplicates between kernels so that they are initialzied
+  // Creating cache map of duplicates: used for tracking duplicates between kernels so that they are initialized
   // only once. Re-initialize copies to be like original view only if original not in cache map
   using key_type = void *;  // key_type should be data() pointer
   static std::unordered_map<key_type, CombineDuplicatesBase *> duplicates_map;

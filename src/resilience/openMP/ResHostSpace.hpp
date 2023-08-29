@@ -100,7 +100,7 @@ static_assert(Kokkos::Impl::MemorySpaceAccess<KokkosResilience::ResHostSpace,
 
 /*--------------------------------------*/
 
-// Memory Space Access specializations, from view accessiblity matrix
+// Memory Space Access specializations, from view accessibility matrix
 
 template <>
 struct MemorySpaceAccess< KokkosResilience::ResHostSpace, Kokkos::HostSpace > {

@@ -76,7 +76,7 @@ namespace KokkosResilience {
    }
 
    // Copy from host memory space to designated IO buffer (dst is an instance of KokkosIOAccessor offset by SharedAllocationHeader)
-   //                                                      src is the data() pointer from the souce view.
+   //                                                      src is the data() pointer from the source view.
    void KokkosIOAccessor::transfer_from_host ( void * dst, const void * src, size_t size_ )  {
 
       Kokkos::Impl::SharedAllocationHeader * pData = reinterpret_cast<Kokkos::Impl::SharedAllocationHeader*>(dst);

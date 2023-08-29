@@ -44,7 +44,7 @@ It is recommended to install the "barebone" variant/branch of VeloC since it has
 It is recommended to use the CMake presets to configure the project. More information on presets can be found [here](https://cmake.org/cmake/help/latest/manual/cmake-presets.7.html). Note that CMake 3.19 or higher is required to use presets, and to inherit from presets bundled with *Kokkos Resilience*, you
 need at least CMake 3.21.
 
-*Kokkos Resilience* includes a set of presets in `CMakePresets.json`. These can be inherited from and represent common aaplication configurations.
+*Kokkos Resilience* includes a set of presets in `CMakePresets.json`. These can be inherited from and represent common application configurations.
 
 #### CMake paths
 

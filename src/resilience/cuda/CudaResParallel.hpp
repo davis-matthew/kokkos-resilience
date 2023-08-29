@@ -473,7 +473,7 @@ public:
       // Number of blocks is bounded so that the reduction can be limited to two passes.
       // Each thread block is given an approximately equal amount of work to perform.
       // Accumulate the values for this block.
-      // The accumulation ordering does not match the final pass, but is arithmatically equivalent.
+      // The accumulation ordering does not match the final pass, but is arithmetically equivalent.
 
       const WorkRange range( m_policy , blockIdx.x , gridDim.x );
 
@@ -512,7 +512,7 @@ public:
      // Number of blocks is bounded so that the reduction can be limited to two passes.
      // Each thread block is given an approximately equal amount of work to perform.
      // Accumulate the values for this block.
-     // The accumulation ordering does not match the final pass, but is arithmatically equivalent.
+     // The accumulation ordering does not match the final pass, but is arithmetically equivalent.
 
      const WorkRange range( m_policy , blockIdx.x , gridDim.x );
 
@@ -704,7 +704,7 @@ public:
       // Number of blocks is bounded so that the reduction can be limited to two passes.
       // Each thread block is given an approximately equal amount of work to perform.
       // Accumulate the values for this block.
-      // The accumulation ordering does not match the final pass, but is arithmatically equivalent.
+      // The accumulation ordering does not match the final pass, but is arithmetically equivalent.
 
       this-> exec_range( value );
     }
@@ -739,7 +739,7 @@ public:
      // Number of blocks is bounded so that the reduction can be limited to two passes.
      // Each thread block is given an approximately equal amount of work to perform.
      // Accumulate the values for this block.
-     // The accumulation ordering does not match the final pass, but is arithmatically equivalent.
+     // The accumulation ordering does not match the final pass, but is arithmetically equivalent.
 
      const Member work_part =
        ( ( m_policy.m_num_tiles + ( gridDim.x - 1 ) ) / gridDim.x ); //portion of tiles handled by each block
@@ -1553,7 +1553,7 @@ public:
     const int max_concurrent_block =
       cuda_internal_maximum_concurrent_block_count();
 
-    // Reduce space has claim flag followed by vaue buffer
+    // Reduce space has claim flag followed by value buffer
     const int global_reduce_value_size =
       max_concurrent_block *
       ( aligned_flag_size + align_scratch( value_size ) );
@@ -1656,7 +1656,7 @@ private:
     // Number of blocks is bounded so that the reduction can be limited to two passes.
     // Each thread block is given an approximately equal amount of work to perform.
     // Accumulate the values for this block.
-    // The accumulation ordering does not match the final pass, but is arithmatically equivalent.
+    // The accumulation ordering does not match the final pass, but is arithmetically equivalent.
 
     const WorkRange range( m_policy , blockIdx.x , gridDim.x );
 
@@ -1881,7 +1881,7 @@ private:
     // Number of blocks is bounded so that the reduction can be limited to two passes.
     // Each thread block is given an approximately equal amount of work to perform.
     // Accumulate the values for this block.
-    // The accumulation ordering does not match the final pass, but is arithmatically equivalent.
+    // The accumulation ordering does not match the final pass, but is arithmetically equivalent.
 
     const WorkRange range( m_policy , blockIdx.x , gridDim.x );
 
